@@ -1,0 +1,106 @@
+body {
+  background-color: rgb(129, 206, 28);
+  font-family: "IBM Plex Serif", serif;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px black;
+  font-weight: 700;
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  font-weight: 700;
+  font-size: 1.5em;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.8rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: auto;
+}
+
+.logga-main {
+  width: 800px;
+}
+.logga-2 {
+  width: 200px;
+}
+
+.grid-container {
+  display: grid;
+  width: 1024px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 48px);
+  justify-content: center;
+  gap: 1.25rem;
+  margin: auto;
+  grid-auto-rows: 48px;
+}
+
+.item-1 {
+  text-align: center;
+  padding: 1.25rem;
+  grid-column: 3/10;
+  grid-row: span 3;
+}
+.item-2 {
+  background-image: url(IMG/DSC_5272.jpg);
+  padding: 1.25rem;
+  grid-column: span 6;
+  grid-row: span 6;
+}
+.item-3 {
+  background-image: url(IMG/DSC_5270.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1.25rem;
+  grid-column: span 6;
+  grid-row: span 6;
+}
+.item-4 {
+  background-image: url(IMG/DSC_5271.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1.25rem;
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
+.item-5 {
+  background-image: url(IMG/DSC_5268.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1.25rem;
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
+.transition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: white;*/
+  border: 1px rgb(0, 0, 0) solid;
+  /* "Tillbakatransition när man flyttar pekaren bort från kortet" */
+  transition: 300ms ease-in-out;
+}
+
+/* Kort 1 hover */
+
+.transition:hover {
+  box-shadow: rgb(255, 115, 0) 8px 8px;
+  /* Transitioneffekt */
+  transition: 300ms ease-in-out;
+}
